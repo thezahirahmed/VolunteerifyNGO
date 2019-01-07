@@ -39,7 +39,10 @@
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/un_input"
+            android:textColor="#c6c6c6"
+            android:theme="@style/TextLabel"
             android:textColorHint="#c6c6c6"
+            android:backgroundTint="#c6c6c6"
             android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -49,8 +52,8 @@
                 android:layout_width="match_parent"
                 android:textColor="#c6c6c6"
                 android:textColorHint="#c6c6c6"
-                android:inputType="text"
                 android:backgroundTint="#c6c6c6"
+                android:inputType="text"
                 android:singleLine="true"
                 android:imeOptions="actionNext"
                 android:hint="USERNAME OR MOBILE NUMBER"
@@ -68,7 +71,10 @@
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/pw_input"
                 android:layout_centerVertical="true"
+                android:textColor="#c6c6c6"
+                android:theme="@style/TextLabel"
                 android:textColorHint="#c6c6c6"
+                android:backgroundTint="#c6c6c6"
                 app:passwordToggleEnabled="true"
                 app:passwordToggleTint="#fff"
                 app:passwordToggleDrawable="@drawable/show_pass"
@@ -130,7 +136,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <com.eleganzit.volunteerifyngo.utils.TextViewRobotoBold
-                android:textColor="#ffffff"
+                android:textColor="@color/colorPrimary"
                 android:gravity="center"
                 android:text="SIGN UP"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"

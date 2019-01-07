@@ -88,7 +88,6 @@
 
         </LinearLayout>
 
-
         <LinearLayout
             android:id="@+id/signup"
             android:layout_below="@+id/inputs"
@@ -107,7 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <com.eleganzit.volunteerifyngo.utils.TextViewRobotoBold
-                android:textColor="#ffffff"
+                android:textColor="@color/colorPrimary"
                 android:gravity="center"
                 android:text="SIGN UP"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
@@ -115,7 +114,6 @@
                 android:layout_height="wrap_content" />
 
         </LinearLayout>
-
 
     </RelativeLayout>
 

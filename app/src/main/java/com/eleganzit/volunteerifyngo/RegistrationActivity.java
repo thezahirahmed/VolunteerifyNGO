@@ -112,6 +112,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
                 startActivity(new Intent(RegistrationActivity.this,RegisterConfirmationActivity.class));
                 overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+                finish();
 
             }
         });

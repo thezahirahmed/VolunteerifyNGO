@@ -12,13 +12,14 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.eleganzit.volunteerifyngo.utils.TextViewRobotoBold;
 import com.hzn.lib.EasyTransition;
 
 public class LoginSelectedActivity extends AppCompatActivity {
 
     private boolean finishEnter;
     RelativeLayout inputs;
-    TextView forgot_password;
+    TextViewRobotoBold forgot_password;
     LinearLayout signup;
     Button signin;
 
@@ -32,7 +33,13 @@ public class LoginSelectedActivity extends AppCompatActivity {
         forgot_password=findViewById(R.id.forgot_password);
         signin=findViewById(R.id.signin);
         signup=findViewById(R.id.signup);
-
+        forgot_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginSelectedActivity.this,ForgotPasswordActivity.class));
+                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+            }
+        });
         long transitionDuration = 300;
         finishEnter = false;
         EasyTransition.enter(
@@ -50,6 +57,15 @@ public class LoginSelectedActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginSelectedActivity.this,RegistrationActivity.class));
+                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+            }
+        });
+
+
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginSelectedActivity.this,NewsFeedActivity.class));
                 overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
             }
         });

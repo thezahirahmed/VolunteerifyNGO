@@ -21,7 +21,8 @@
         <activity android:name=".LoginSelectedActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".RegistrationActivity" />
-        <activity android:name=".RegisterConfirmationActivity"></activity>
+        <activity android:name=".RegisterConfirmationActivity" />
+        <activity android:name=".NewsFeedActivity"></activity>
     </application>
 
 </manifest>

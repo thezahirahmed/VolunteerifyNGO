@@ -81,6 +81,7 @@
                 android:layout_centerVertical="true"
                 android:textColorHint="#c6c6c6"
                 app:passwordToggleEnabled="true"
+                android:theme="@style/TextLabel"
                 app:passwordToggleTint="#fff"
                 app:passwordToggleDrawable="@drawable/show_pass"
                 android:layout_width="match_parent"
@@ -141,7 +142,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <com.eleganzit.volunteerifyngo.utils.TextViewRobotoBold
-                android:textColor="#ffffff"
+                android:textColor="@color/colorPrimary"
                 android:gravity="center"
                 android:text="SIGN UP"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
