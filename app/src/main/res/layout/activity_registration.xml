@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/register_bg"
         android:src="@drawable/register_1"
-        android:scaleType="centerInside"
+        android:scaleType="fitXY"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

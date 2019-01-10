@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.eleganzit.volunteerifyngo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,7 +24,14 @@
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".RegisterConfirmationActivity" />
-        <activity android:name=".NewsFeedActivity"></activity>
+        <activity android:name=".NewsFeedActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".NotificationsActivity" />
+        <activity android:name=".MessageActivity" />
+        <activity
+            android:name=".ChatActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".NewGroupActivity"></activity>
     </application>
 
 </manifest>
