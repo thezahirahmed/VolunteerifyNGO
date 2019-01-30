@@ -6,7 +6,7 @@ android {
         applicationId "com.eleganzit.volunteerifyngo"
         minSdkVersion 19
         targetSdkVersion 28
-        project.ext.set("archivesBaseName", "Volunteerify-10-01-2019" + defaultConfig.versionName)
+        project.ext.set("archivesBaseName", "Volunteerify-25-01-2019" + defaultConfig.versionName)
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -33,5 +33,6 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
     implementation 'org.jetbrains:annotations-java5:15.0'
     implementation 'com.github.douglasjunior:android-simple-tooltip:0.2.2'
+    implementation 'com.github.stfalcon:chatkit:0.3.3'
 
 }
